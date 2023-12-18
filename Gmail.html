@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="#Login">Login</a></li>
+            <li><a href="#listmail">All Mail</a></li>
+            <li><a href="#Createnew">Compose New Mail</a></li>
+
+
+        </ul>
+    </nav>
+    </div>
+
+    <!-- Login Page -->
+    <div id="Login">
+        <div class="loginbox">
+            <img src="images/email.jpg" class="avatar">
+            <h1>Login here</h1>
+            <form>
+                <p>Username</p>
+                <input type="text" name="" placeholder="Enter Username">
+                <p>Password</p>
+                <input type="password" name="" placeholder="Enter Password">
+                <input type="submit" name="" value="Login">
+                <a href="#">Lost your Password?</a><br>
+                <a href="#">Don't Have an account?</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- View Mail Page -->
+    <div id="listmail">
+        <h2 style="color: black;">Your Mails</h2>
+        <ul>
+            <li><a href="#subject1">Subject 1</a></li>
+            <li><a href="#subject2">Subject 2</a></li>
+            <li><a href="#subject3">Subject 3</a></li>
+        </ul>
+        <a href="#compose">Compose New Mail</a>
+    </div>
+
+
+
+
+    <!-- Compose New Mail Page -->
+    <div id="Createnew">
+        <h2>Compose New Mail</h2>
+        <form action="send_mail.php" method="post">
+            <label for="to">To:</label>
+            <input type="email" id="to" name="to" required><br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+
+    <!-- Mail Content Page -->
+    <div id="subject1">
+        <h2>Subject of the Mail 1</h2>
+        <p><strong>From:</strong> vsravani0123@gmail.com</p>
+        <p><strong>Date:</strong> Decenber 12, 2023</p>
+        <p>I am a passionate student on a journey of discovery and growth.Hi Myself Sravani. I'm from
+            hyderabad Telangana. Currently I'm pursing my Master's in Data Science at Christ University
+            Lavasa Pune.
+            My hobbies are singing,traveling.My Favourite subject is Mathematics and I'm more intrested in
+            Web Development.</p>
+        <a href="#view_mail">Back to Mails</a>
+    </div>
+
+    
+    <div id="subject2">
+            <h2>Subject of the Mail2</h2>
+            <p><strong>From:</strong> v.sravani@msds.christuniversity.in</p>
+            <p><strong>Date:</strong> Decenber 12, 2023</p>
+            <p>CHRIST (Deemed to be University) was born out of the educational vision of St Kuriakose Elias Chavara, 
+                an educationalist and social reformer of the nineteenth century in South India. He founded the first Catholic indigenous congregation, 
+                Carmelites of Mary Immaculate (CMI), in 1831 which administers CHRIST (Deemed to be University).Established in 1969 as Christ College, 
+                it undertook path-breaking initiatives in Indian higher education with the introduction of innovative and modern curricula, 
+                insistence on academic discipline, imparting of Holistic Education and adoption of global higher education practices 
+                with the support of creative and dedicated staff. </p>
+            <a href="#view_mail">Back to Mails</a>
+        </div>
+
+    </div>
+
+    <div id="subject3">
+        <h2>Subject of the Mail</h2>
+        <p><strong>From:</strong> ssaikumar007@gmail.com</p>
+        <p><strong>Date:</strong> Decenber 12, 2023</p>
+        <p>
+            "Hello and warm greetings! It's a pleasure to connect with you. 
+            I hope this message finds you well and in good spirits. Whether it's a bright morning, 
+            a peaceful afternoon, or a serene evening, may your day be filled with joy and positivity.
+             Here's to meaningful conversations and shared moments ahead. Cheers!"</p>
+        <a href="#view_mail">Back to Mails</a>
+    </div>
+
+</body>
+
+</html>
